@@ -1,0 +1,33 @@
+<app-header titulo="Progress" color="primary"></app-header>
+<ion-content class="ion-padding">
+
+Default Progressbar
+<ion-progress-bar color="primary"></ion-progress-bar>
+<br/>
+<br/>
+Default Progressbar with range selected
+<ion-progress-bar [value]="porcentaje"></ion-progress-bar>
+<br/>
+<br/>
+Colorize Progressbar
+<ion-progress-bar color="tertiary" value="0.5"></ion-progress-bar>
+<br/>
+<br/>
+<ion-progress-bar color="medium" value="0.3"></ion-progress-bar>
+<br/>
+<br/>
+Other types
+<ion-progress-bar value="0.25" buffer="0.8" color="danger"></ion-progress-bar>
+<br/>
+<br/>
+<ion-progress-bar type="indeterminate" color="success"></ion-progress-bar>
+<br/>
+<br/>
+<ion-progress-bar type="indeterminate" reversed="true" color="warning"></ion-progress-bar>
+select range
+<ion-range min="0" max="100" (ionChange)="cambiaRango($event)">
+    <ion-icon slot="start" name="snow-outline"></ion-icon>
+    <ion-icon slot="end" name="sunny-outline"></ion-icon>
+  </ion-range>
+
+</ion-content>

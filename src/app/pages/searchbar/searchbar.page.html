@@ -1,0 +1,17 @@
+<app-header titulo="searchbar"></app-header>
+
+<ion-content>
+
+  <ion-button (click)="mostrar()" expand="block" fill="clear" shape="round">
+    Mostrar Diferentes SearchBar
+  </ion-button>
+
+  <ion-searchbar showCancelButton="focus" (ionChange)="buscarTexto( $event )"></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let item of albumnes | filtro:buscar">
+      <ion-label> - {{ item.title }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

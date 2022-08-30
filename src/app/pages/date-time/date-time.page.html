@@ -1,0 +1,40 @@
+<app-header titulo="Date Time"></app-header>
+
+<ion-content >
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>ion-datetime</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+
+          <ion-datetime id="datetime2" hour-cycle="h12" size="cover">
+            <span slot="title">Fecha de nacimiento</span>
+            <span slot="time-label">Hora</span>
+          </ion-datetime>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-label>ion-datetime button</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-datetime-button datetime="datetime"></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="datetime" [showDefaultButtons]="true" (ionChange)="cambioFecha( $event )" hour-cycle="h24" min="2000" max="2022" [firstDayOfWeek]="1">
+          </ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Pickers</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-button expand="block" (click)="presentPicker()">Mostrar Picker</ion-button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
