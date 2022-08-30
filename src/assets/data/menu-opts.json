@@ -132,5 +132,31 @@
     "name":"searchbar",
     "redirectTo":"/searchbar"
 
+  },
+  {
+
+    "icon":"copy-outline",
+    "name":"segment",
+    "redirectTo":"/segment"
+
+  },
+  {
+
+    "icon":"albums-outline",
+    "name":"slides",
+    "redirectTo":"/slides"
+
+  },
+  {
+
+    "icon":"cog-outline",
+    "name":"tabs",
+    "redirectTo":"/tabs"
+
+  },
+  {
+    "icon":"pricetag-outline",
+    "name":"toast",
+    "redirectTo":"/toast"
   }
 ]

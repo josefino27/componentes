@@ -5,8 +5,7 @@
     <ion-label>Nombre Titulo:</ion-label>
     <ion-input type="text" placeholder="Escribe el titulo" [(ngModel)]="nombre"></ion-input>
   </ion-item>
-  <ion-item>
-
+  
     <form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)">
       <ion-list-header>
         <ion-label>Formulario Valido: {{ formulario.valid }}</ion-label>
@@ -33,56 +32,52 @@
 
     </ion-list-header>
     <ion-list>
-
       <!-- Default Input -->
       <ion-input></ion-input>
-  </ion-item>
-  <ion-item>
-    <!-- Input with value -->
-    <ion-input value="custom"></ion-input>
-  </ion-item>
-  <ion-item>
-    <!-- Input with placeholder -->
-    <ion-input placeholder="Enter Input"></ion-input>
-  </ion-item>
-  <ion-item>
-    <!-- Input with clear button when there is a value -->
-    <ion-input clearInput value="clear me"></ion-input>
-  </ion-item>
-  <ion-item>
-    <!-- Number type input -->
-    <ion-input type="number" value="333"></ion-input>
-  </ion-item>
-  <ion-item>
-    <!-- Disabled input -->
-    <ion-input value="Disabled" disabled></ion-input>
-  </ion-item>
-  <ion-item>
-    <!-- Readonly input -->
-    <ion-input value="Readonly" readonly></ion-input>
-  </ion-item>
-  <!-- Inputs with labels -->
-  <ion-item>
-    <ion-label>Default Label</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+      <ion-item>
+        <!-- Input with value -->
+        <ion-input value="custom"></ion-input>
+      </ion-item>
+      <ion-item>
+        <!-- Input with placeholder -->
+        <ion-input placeholder="Enter Input"></ion-input>
+      </ion-item>
+      <ion-item>
+        <!-- Input with clear button when there is a value -->
+        <ion-input clearInput value="clear me"></ion-input>
+      </ion-item>
+      <ion-item>
+        <!-- Number type input -->
+        <ion-input type="number" value="333"></ion-input>
+      </ion-item>
+      <ion-item>
+        <!-- Disabled input -->
+        <ion-input value="Disabled" disabled></ion-input>
+      </ion-item>
+      <ion-item>
+        <!-- Readonly input -->
+        <ion-input value="Readonly" readonly></ion-input>
+      </ion-item>
+      <!-- Inputs with labels -->
+      <ion-item>
+        <ion-label>Default Label</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Floating Label</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">Floating Label</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="fixed">Fixed Label</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="fixed">Fixed Label</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="stacked">Stacked Label</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  </ion-list>
-
-
-
+      <ion-item>
+        <ion-label position="stacked">Stacked Label</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-list>
+ 
 </ion-content>
